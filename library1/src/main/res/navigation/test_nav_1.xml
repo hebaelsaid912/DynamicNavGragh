@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/test_nav_1">
+    android:id="@+id/test_nav_1"
+    app:startDestination="@id/firstLibraryFragment">
 
+    <fragment
+        android:id="@+id/firstLibraryFragment"
+        android:name="com.hebaelsaid.library1.FirstLibraryFragment"
+        android:label="FirstLibraryFragment" >
+        <deepLink
+            android:id="@+id/firstLibraryFragment_lib1_deep_link"
+            app:uri="@string/deeplink_first_fragment_lib1"/>
+    </fragment>
 </navigation>
